@@ -1,0 +1,64 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body{
+            background-image: url('Airplanesignup.jpg');
+            background-size: cover;
+        }
+        form{
+            background-color: lavender;
+            margin-top: 6em;
+            margin-left: 25em;
+            margin-right: 10em;
+            padding: 30px;
+            box-shadow: 10px 10px 8px #888888;
+        }
+        form h1{
+          text-align: center;
+          color: blueviolet;
+          font-family: fantasy;
+        }
+        form h2{
+            margin-left: 9em;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            
+        }
+        form h3{
+        	font-family:'Times New Roman', Times, serif;
+        	padding : 10px;
+        	font-weight: bolder;
+        	color: red;
+        }
+    </style>
+    <title>Log in</title>
+</head>
+<body>
+    <div class="container">
+    <form action="UserLogin.java" method="post">
+        <h1>XYZ Flight Ltd.</h1>
+        <h2>LOG IN</h2>
+  <div class="mb-3">
+    <label for="exampleInputUserID" class="form-label">Unique UserID</label>
+    <input type="text" class="form-control" id="exampleInputUserID" required>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" required>
+  </div>
+  <button type="submit" class="btn btn-primary">Log in</button>
+  <br>
+  Not a member? <a href="registration.jsp">Register</a>
+  <h3>Invalid Admin ID or Password</h3>
+</form>
+    
+</body>
+</html>
